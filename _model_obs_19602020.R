@@ -1,4 +1,4 @@
-#all sites vs observations, 1960-2020
+#model vs observations, 1960-2020
 
 # Function to extract the first four decimal places as a string
 extract_first_decimals <- function(x) {

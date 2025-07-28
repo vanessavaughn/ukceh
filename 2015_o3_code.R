@@ -95,7 +95,7 @@
   ext <- ext(min(o3nc_df$lon), max(o3nc_df$lon), min(o3nc_df$lat), max(o3nc_df$lat))
   res <- c(.06, .06)
   r <- rast(ext = ext, res = res, crs = "EPSG:4326")
-  points <- vect(o3nc_df, geom = c("lon", "lat"), crs = "EPSG:4326")
+  points <- vect(o3nc_df, geom = c("longitude", "latitude"), crs = "EPSG:4326")
   r <- rasterize(points, r, field = "SURF_ppb_O3", fun = "mean")
   r_df<- as.data.frame(r, xy=TRUE, cells=FALSE)
   names(r_df) <- c("longitude", "latitude", "SURF_ppb_O3")
@@ -107,7 +107,6 @@
 o3sites_values_coords<- o3sites_values_coords%>%
   mutate(o3=o3*ozone)
 
-ggplot()+
 
 
   

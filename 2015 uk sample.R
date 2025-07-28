@@ -80,7 +80,7 @@ o3plot+ geom_point(data=top_o3_locations, aes(x=longitude, y=latitude), color="r
  
 
 
-# geom_polygon( data= worldmap, aes( x=long, y=lat, group=group),
+geom_polygon( data= worldmap, aes( x=long, y=lat, group=group),
                 color="black", fill="NA" ) +
   coord_fixed(xlim = c(-10,3), 
               ylim = c(50.3, 59))
