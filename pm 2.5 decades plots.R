@@ -607,9 +607,3 @@ print(o3_2020_1960_plot)
 
 ###########################################################################################
 
-
-
-#panel of plots
-combined_pm_plots<- grid.arrange(pm_1960_plot,pm_1970_plot,pm_1980_plot,pm_1990_plot,pm_2000_plot,pm_2010_plot,pm_2020_plot,pm_2020_1960_plot, ncol = 4, nrow = 2)
-
-print(combined_pm_plots)
